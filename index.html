@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tentang Aisyah Hanan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .script-font {
+      font-family: 'Dancing Script', cursive;
+    }
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, #fdf2f8 0%, #ffe4e6 50%, #fce7f3 100%);
+    }
+    
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 8px 32px rgba(186, 104, 200, 0.1);
+    }
+    
+    .heartbeat {
+      animation: heartbeat 1.5s ease-in-out infinite both;
+    }
+    
+    @keyframes heartbeat {
+      from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+      }
+      10% {
+        transform: scale(0.91);
+        animation-timing-function: ease-in;
+      }
+      17% {
+        transform: scale(0.98);
+        animation-timing-function: ease-out;
+      }
+      33% {
+        transform: scale(0.87);
+        animation-timing-function: ease-in;
+      }
+      45% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+      }
+    }
+    
+    .floating {
+      animation: floating 3s ease-in-out infinite;
+    }
+    
+    @keyframes floating {
+      0% { transform: translate(0, 0px); }
+      50% { transform: translate(0, -15px); }
+      100% { transform: translate(0, 0px); }
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(236, 72, 153, 0.3);
+    }
+    
+    .btn-secondary {
+      background: linear-gradient(135deg, #f472b6 0%, #ec4899 100%);
+      transition: all 0.3s ease;
+    }
+    
+    .btn-secondary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(244, 114, 182, 0.3);
+    }
+    
+    .password-field {
+      letter-spacing: 2px;
+    }
+    
+    .password-field::placeholder {
+      letter-spacing: normal;
+    }
+  </style>
+</head>
+<body class="gradient-bg min-h-screen flex items-center justify-center p-4">
+  <!-- Lock Screen -->
+  <div id="lockScreen" class="glass-card p-10 rounded-2xl shadow-2xl max-w-md w-full text-center">
+    <div class="heartbeat inline-block mb-6">
+      <div class="w-20 h-20 mx-auto bg-gradient-to-r from-pink-300 to-rose-400 rounded-full flex items-center justify-center shadow-lg">
+        <i class="fas fa-lock text-white text-2xl"></i>
+      </div>
+    </div>
+    
+    <h2 class="text-2xl font-bold mb-2 text-gray-800">Selamat Datang</h2>
+    <p class="text-gray-600 mb-6">Masukkan password untuk melihat halaman Aisyah Hanan</p>
+    
+    <div class="relative mb-6">
+      <input
+        type="password"
+        id="passwordInput"
+        placeholder="Ketik password di sini..."
+        class="password-field border-2 border-pink-200 px-6 py-4 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-pink-300 focus:border-transparent transition"
+      />
+      <i class="fas fa-key absolute right-4 top-1/2 transform -translate-y-1/2 text-pink-400"></i>
+    </div>
+    
+    <div class="flex flex-col gap-3">
+      <button
+        onclick="checkPassword()"
+        class="btn-primary text-white font-semibold px-6 py-4 rounded-xl transition flex items-center justify-center gap-2"
+      >
+        <i class="fas fa-unlock-alt"></i>
+        Masuk ke Halaman
+      </button>
+      
+      <div id="errorMessage" class="hidden bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded-lg text-sm">
+        <i class="fas fa-exclamation-circle mr-2"></i>
+        Password salah, coba lagi.
+      </div>
+      
+      <p class="text-xs text-gray-500 mt-4">
+        <i class="fas fa-lightbulb mr-1"></i>
+        Hint: Tanggal lahir Aisyah Hanan (format: DDMMYYYY)
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div
+    id="mainContent"
+    class="hidden glass-card p-10 rounded-2xl shadow-2xl max-w-lg w-full text-center"
+  >
+    <div class="floating mb-8">
+      <div class="w-28 h-28 mx-auto bg-gradient-to-r from-pink-400 to-rose-500 rounded-full flex items-center justify-center shadow-xl border-4 border-white">
+        <i class="fas fa-heart text-white text-4xl"></i>
+      </div>
+    </div>
+    
+    <h1 class="text-4xl font-bold mb-2 text-gray-800">Aisyah Hanan</h1>
+    <p class="script-font text-2xl text-pink-500 mb-2">
+      <i class="fas fa-star text-yellow-400 mr-2"></i>
+      Cahaya dalam Kegelapan
+      <i class="fas fa-star text-yellow-400 ml-2"></i>
+    </p>
+    
+    <div class="bg-gradient-to-r from-pink-50 to-rose-50 p-6 rounded-xl mb-8 border border-pink-100">
+      <p class="italic text-gray-700 text-lg script-font leading-relaxed">
+        "Jika waktu bisa diputar ulang, aku akan memilih untuk mengenalmu lebih awal. 
+        Setiap momen bersamamu adalah halaman terindah dalam buku hidupku."
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-2 gap-4 mb-10">
+      <div class="bg-pink-50 p-4 rounded-xl">
+        <i class="fas fa-sun text-yellow-500 text-2xl mb-2"></i>
+        <p class="font-medium text-gray-800">Optimis</p>
+      </div>
+      <div class="bg-pink-50 p-4 rounded-xl">
+        <i class="fas fa-heart text-red-400 text-2xl mb-2"></i>
+        <p class="font-medium text-gray-800">Penyayang</p>
+      </div>
+      <div class="bg-pink-50 p-4 rounded-xl">
+        <i class="fas fa-laugh-beam text-green-400 text-2xl mb-2"></i>
+        <p class="font-medium text-gray-800">Ceria</p>
+      </div>
+      <div class="bg-pink-50 p-4 rounded-xl">
+        <i class="fas fa-brain text-purple-400 text-2xl mb-2"></i>
+        <p class="font-medium text-gray-800">Cerdas</p>
+      </div>
+    </div>
+    
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a
+        href="cerita.html"
+        class="btn-primary text-white px-8 py-4 rounded-xl font-semibold transition flex items-center justify-center gap-2"
+      >
+        <i class="fas fa-book-open"></i>
+        Lanjut ke Cerita
+      </a>
+      <a
+        href="galeri.html"
+        class="btn-secondary text-white px-8 py-4 rounded-xl font-semibold transition flex items-center justify-center gap-2"
+      >
+        <i class="fas fa-images"></i>
+        Lihat Galeri
+      </a>
+    </div>
+    
+    <div class="mt-10 pt-6 border-t border-pink-200">
+      <p class="text-sm text-gray-500">
+        <i class="fas fa-copyright mr-1"></i>
+        Halaman khusus untuk Aisyah Hanan • Dibuat dengan 
+        <i class="fas fa-heart text-red-400 mx-1"></i>
+      </p>
+    </div>
+  </div>
+
+  <!-- Animasi CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  
+  <!-- JS files -->
+  <script src="js/login.js"></script>
+</body>
+</html>

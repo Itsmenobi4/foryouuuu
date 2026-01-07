@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cerita Aisyah Hanan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .script-font {
+      font-family: 'Dancing Script', cursive;
+    }
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, #fdf2f8 0%, #ffe4e6 50%, #fce7f3 100%);
+    }
+    
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 8px 32px rgba(186, 104, 200, 0.1);
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(236, 72, 153, 0.3);
+    }
+    
+    .btn-secondary {
+      background: linear-gradient(135deg, #f472b6 0%, #ec4899 100%);
+      transition: all 0.3s ease;
+    }
+    
+    .btn-secondary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(244, 114, 182, 0.3);
+    }
+    
+    .timeline-item {
+      border-left: 3px solid #ec4899;
+      padding-left: 25px;
+      margin-left: 10px;
+      position: relative;
+    }
+    
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -9px;
+      top: 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #ec4899;
+    }
+    
+    .fade-in {
+      animation: fadeIn 1s ease-in;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="gradient-bg min-h-screen py-10 px-4">
+  <div class="max-w-4xl mx-auto">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-pink-400 to-rose-500 rounded-full flex items-center justify-center shadow-lg">
+        <i class="fas fa-book-heart text-white text-3xl"></i>
+      </div>
+      <h1 class="text-4xl font-bold text-gray-800 mb-2">Cerita Aisyah Hanan</h1>
+      <p class="script-font text-2xl text-pink-500 mb-4">
+        <i class="fas fa-feather-alt text-pink-400 mr-2"></i>
+        Kisah yang Tak Terlupakan
+        <i class="fas fa-feather-alt text-pink-400 ml-2"></i>
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="glass-card p-8 rounded-2xl shadow-2xl mb-8 fade-in">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Sebuah Cerita Tentang Cahaya</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-pink-400 to-rose-500 mx-auto mb-6 rounded-full"></div>
+      </div>
+      
+      <div class="space-y-6 text-gray-700">
+        <p class="leading-relaxed">
+          Aisyah Hanan, namanya seperti melodi yang lembut terdengar di telinga. 
+          Seperti bunga yang mekar di pagi hari, kehadirannya membawa kedamaian dan 
+          kebahagiaan bagi setiap orang di sekitarnya.
+        </p>
+        
+        <p class="leading-relaxed">
+          Setiap senyumannya adalah matahari yang menyinari hari-hari kelam. 
+          Setiap kata-katanya adalah pelukan hangat yang menenangkan jiwa. 
+          Aisyah bukan sekadar nama, ia adalah sebuah doa, sebuah harapan, 
+          dan sebuah anugerah yang tak ternilai.
+        </p>
+        
+        <div class="bg-gradient-to-r from-pink-50 to-rose-50 p-6 rounded-xl my-8 border border-pink-100">
+          <p class="italic text-lg script-font text-center text-gray-700">
+            "Dalam diamnya ada ribuan cerita, dalam senyumnya ada sejuta makna, 
+            dan dalam hatinya ada samudera kasih sayang yang tak bertepi."
+          </p>
+        </div>
+        
+        <p class="leading-relaxed">
+          Hari-hari bersamanya adalah halaman terindah dalam buku kehidupan. 
+          Setiap momen tertawa bersama, setiap percakapan kecil, setiap tatapan 
+          penuh makna—semuanya terukir indah dalam memori, menjadi kenangan yang 
+          takkan pernah pudar oleh waktu.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Timeline -->
+    <div class="glass-card p-8 rounded-2xl shadow-2xl mb-8 fade-in">
+      <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Momen Berharga</h3>
+      
+      <div class="space-y-8">
+        <div class="timeline-item">
+          <h4 class="font-bold text-lg text-pink-600 mb-2">Pertemuan Pertama</h4>
+          <p class="text-gray-600">Saat pertama kali bertemu, dunia seakan berhenti berputar. Senyumanmu menyapa dengan hangat, mata yang berbinar penuh harapan.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <h4 class="font-bold text-lg text-pink-600 mb-2">Tawa yang Menular</h4>
+          <p class="text-gray-600">Tawamu seperti musik yang merdu, mampu mengusir semua kesedihan dan mengisi ruang dengan kebahagiaan.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <h4 class="font-bold text-lg text-pink-600 mb-2">Kebersamaan yang Bermakna</h4>
+          <p class="text-gray-600">Setiap detik bersamamu adalah anugerah. Percakapan kecil, diam yang nyaman, semua terasa sempurna.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <h4 class="font-bold text-lg text-pink-600 mb-2">Inspirasi Tanpa Akhir</h4>
+          <p class="text-gray-600">Keberanianmu, ketulusanmu, dan kasih sayangmu menjadi inspirasi untuk menjadi manusia yang lebih baik setiap hari.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Quote Section -->
+    <div class="glass-card p-8 rounded-2xl shadow-2xl mb-8 fade-in">
+      <div class="text-center">
+        <i class="fas fa-quote-left text-4xl text-pink-300 mb-4"></i>
+        <p class="text-xl script-font text-gray-700 italic mb-6">
+          "Jika hidup adalah sebuah buku, maka setiap halaman bersamamu adalah bab terindah yang takkan pernah aku lupa. 
+          Aisyah Hanan, terima kasih telah menjadi bagian dari cerita hidupku."
+        </p>
+        <i class="fas fa-quote-right text-4xl text-pink-300"></i>
+      </div>
+    </div>
+    
+    <!-- Navigation Buttons -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+      <a 
+        href="index.html" 
+        class="btn-primary text-white px-8 py-4 rounded-xl font-semibold transition flex items-center justify-center gap-2"
+      >
+        <i class="fas fa-home"></i>
+        Kembali ke Halaman Utama
+      </a>
+      
+      <a 
+        href="galeri.html" 
+        class="btn-secondary text-white px-8 py-4 rounded-xl font-semibold transition flex items-center justify-center gap-2"
+      >
+        <i class="fas fa-images"></i>
+        Lihat Galeri
+      </a>
+      
+      <button 
+        id="logoutBtn"
+        class="glass-card text-pink-600 border border-pink-200 px-8 py-4 rounded-xl font-semibold transition flex items-center justify-center gap-2 hover:bg-pink-50"
+      >
+        <i class="fas fa-sign-out-alt"></i>
+        Keluar
+      </button>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="mt-16 pt-8 border-t border-pink-200 text-center text-gray-600 text-sm">
+      <p>
+        <i class="fas fa-heart text-red-400 mr-1"></i>
+        Cerita ini ditulis dengan penuh cinta dan penghargaan untuk Aisyah Hanan.
+      </p>
+    </footer>
+  </div>
+  
+  <!-- JS files -->
+  <script src="js/checklogin.js"></script>
+</body>
+</html>
